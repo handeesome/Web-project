@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,-0.01),#b37e13),url('background.png');
+    background-image: linear-gradient(rgba(0,0,0,-0.01),#b37e13),url('img/background.png');
     background-size: cover;
     background-position: center;
 }
