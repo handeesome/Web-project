@@ -12,14 +12,6 @@ CREATE TABLE `inst_rent` (
   `rent_status` text NOT NULL
 );
 
-create table tbl_contact(
-  Id int(10),
-  fldName varchar(50),
-  fldEmail varchar(50),
-  fldPhone varchar(20),
-  fldMessage varchar(250)
-);
-
 --
 -- Insert in table `inst_rent`
 --
@@ -323,9 +315,7 @@ CREATE TABLE `inst_user` (
   `user_lastname` varchar(25) NOT NULL,
   `user_password` varchar(250) NOT NULL,
   `user_email` varchar(200) NOT NULL,
-  `user_phone` varchar(20) NOT NULL,
-  `user_type` text NOT NULL,
-  `user_available_fl` int(1) NOT NULL
+  `user_phone` varchar(20) NOT NULL
 );
 
 --

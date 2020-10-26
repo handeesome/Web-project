@@ -17,6 +17,8 @@ $rs = mysqli_query($conn, $sql);
 if($rs)
 {
 	echo "Contact Records Inserted";
+}else{
+    echo "Contact Records Not Inserted";
 }
 
 ?>
