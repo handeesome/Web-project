@@ -1,21 +1,32 @@
 <?php
-include_once 'dataAccess.php';
+$conn = mysqli_connect('localhost', 'group23', 'FgwMm3', 'group23');
+
+if(!$connect)
+{
+    echo "not connected<br>";
+	}
+else{
+    echo "connected<br>";
+}
 
 // get the post records
-$txtName = $_POST['txtName'];
+$txtFirstName = $_POST['txtFirstName'];
+$txtLastName = $_POST['txtLastName'];
+$txtPassword = $_POST['txtPassword'];
 $txtEmail = $_POST['txtEmail'];
 $txtPhone = $_POST['txtPhone'];
-$txtMessage = $_POST['txtMessage'];
 
 // database insert SQL code
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
+$sql = "INSERT INTO `inst_user` (`user_firstname`, `user_lastname`, `user_password`, `user_email`, `user_phone`) 
+		VALUES ('$txtFirstName', '$txtLastName', '$txtPassword', '$txtEmail', '$txtPhone')";
 
 // insert in database 
-$rs = mysqli_query($con, $sql);
+$rs = mysqli_query($conn, $sql);
 if($rs)
 {
 	echo "Contact Records Inserted";
 }
+
 ?>
 
 
