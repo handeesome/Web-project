@@ -10,11 +10,10 @@ $sql = "INSERT INTO `inst_color` (`color_name`)
 
 // insert in database 
 $rs = mysqli_query($conn, $sql);
-if($rs)
+if ($done)
 {
-	echo "Contact Records Inserted";
-}else{
-	echo "Contact Records Inserted";
+    header("Location: /success_feedback.html");
+    exit;
 }
 
 ?>

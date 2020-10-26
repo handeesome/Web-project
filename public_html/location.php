@@ -11,11 +11,10 @@ $sql = "INSERT INTO `inst_instument_location` (`location_zip`, `inst_no`)
 
 // insert in database 
 $rs = mysqli_query($conn, $sql);
-if($rs)
+if ($done)
 {
-	echo "Contact Records Inserted";
-}else{
-	echo "Contact Records Inserted";
+    header("Location: /success_feedback.html");
+    exit;
 }
 
 ?>

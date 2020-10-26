@@ -12,11 +12,10 @@ $sql = "INSERT INTO `inst_manuf` (`manuf_brand`, `manuf_model`, `manuf_rate`)
 
 // insert in database 
 $rs = mysqli_query($conn, $sql);
-if($rs)
+if ($done)
 {
-	echo "Contact Records Inserted";
-}else{
-	echo "Contact Records Inserted";
+    header("Location: /success_feedback.html");
+    exit;
 }
 
 ?>
