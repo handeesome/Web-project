@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+<fieldset>
+  <legend>Instrument Location Form</legend>
+  <form name="frmContact" method="post" action="location.php">
+    <p>
+      <label for="instr_loc">Choose a Location:</label>
+    <select name="txtinstr_loc" id="txtinstr_loc">
+    <option value="Bremen">Bremen</option>
+    <option value="Vegesack">Vegesack</option>
+    <option value="Bremen-Walle">Bremen-Walle</option>
+    <option value="St.Magnus">St.Magnus</option>
+  </select>
+    </p>
+    <p>
+      <label for="instr_type">Choose a instrument:</label>
+     <select name="txtinstr_type" id="txtinstr_type">
+    <option value="Guitar">Guitar</option>
+    <option value="Violin">Violin</option>
+    <option value="Drums">Drums</option>
+    <option value="Flutes">Flutes</option>
+  </select>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+    </p>
+  </form>
+</fieldset>

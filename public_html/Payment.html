@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Payment form - PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Payment Form</legend>
+        <form name="payment_form" method="post" action="payment.php">
+            <p>
+                <label for="payment_start_time">Payment start time</label>
+                <input type="date" name="txtpayment_start_time" id="txtpayment_start_time">
+            </p>
+            <p>
+                <label for="payment_end_time">Payment end time</label>
+                <input type="date" name="txtpayment_end_time" id="txtpayment_end_time">
+            </p>
+            <p>
+                <label for="price">Price</label>
+                <input type="text" name="txtprice" id="txtprice">
+            </p>
+
+            <p>&nbsp;</p>
+            <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+

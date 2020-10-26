@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rent Form - PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Manufacturer Form</legend>
+        <form name="manufacturer_form" method="post" action="manufacturer.php">
+            <p>
+                <label for="manuf_brand">Brand </label>
+                <input type="text" name="txtbrand" id="txtbrand">
+            </p>
+            <p>
+                <label for="manuf_model">Model</label>
+                <input type="text" name="txtmodel" id="txtmodel">
+            </p>
+            <p>
+                <label for="manuf_rate">Rate </label>
+                <select name="manuf_rate" id="manuf_rate">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+            </p>
+
+            <p>&nbsp;</p>
+            <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+

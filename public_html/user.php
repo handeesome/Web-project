@@ -1,13 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'group23', 'FgwMm3', 'group23');
-
-if(!$connect)
-{
-    echo "not connected<br>";
-	}
-else{
-    echo "connected<br>";
-}
+include 'config.php'
 
 // get the post records
 $txtFirstName = $_POST['txtFirstName'];

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rent Form - PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Rent Form</legend>
+        <form name="inst_rent" method="post" action="rent.php">
+            <p>
+                <label for="pickup_location">Pick-Up location </label>
+                <input type="text" name="txtpickup_location" id="txtpickup_location">
+            </p>
+            <p>
+                <label for="rent_date">Rent Date </label>
+                <input type="date" name="txtrentdate" id="txtrentdate">
+            </p>
+            <p>
+                <label for="rent_from_date">Rent From </label>
+                <input type="date" name="txtrent_from_date" id="txtrent_from_date">
+            </p>
+            <p>
+                <label for="rent_to_date">Rent To </label>
+                <input type="date" name="txtrent_to_date" id="txtrent_to_date">
+            </p>
+            <p>
+                <label for="rent_status">Message</label>
+                <select name="instr_loc" id="instr_loc">
+                    <option value="booked">Booked</option>
+                    <option value="not_booked">Not booked</option>
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+
