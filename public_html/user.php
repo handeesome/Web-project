@@ -1,6 +1,7 @@
 <?php
 $conn = mysqli_connect('localhost', 'group23', 'FgwMm3', 'group23');
 
+
 // get the post records
 $txtFirstName = $_POST['txtFirstName'];
 $txtLastName = $_POST['txtLastName'];
@@ -18,7 +19,8 @@ if($rs)
 {
 	echo "Contact Records Inserted";
 }else{
-    echo "Contact Records Not Inserted";
+	echo "Contact Records Not Inserted";
+
 }
 
 ?>
