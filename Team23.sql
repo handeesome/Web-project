@@ -12,6 +12,14 @@ CREATE TABLE `inst_rent` (
   `rent_status` text NOT NULL
 );
 
+create table tbl_contact(
+  Id int(10),
+  fldName varchar(50),
+  fldEmail varchar(50),
+  fldPhone varchar(20),
+  fldMessage varchar(250)
+);
+
 --
 -- Insert in table `inst_rent`
 --
