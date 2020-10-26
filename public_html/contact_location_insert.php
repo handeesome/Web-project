@@ -1,5 +1,5 @@
 <?php
-include 'config.php'
+include 'config.php';
 
 // get the post records
 $txtLocZip = $_POST['txtLocZip'];
