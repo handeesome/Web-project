@@ -19,7 +19,7 @@ if($rs)
 {
 	echo "Contact Records Inserted";
 }else{
-	echo "Contact Records Not Inserted";
+	echo "Contact Records Inserted";
 
 }
 
