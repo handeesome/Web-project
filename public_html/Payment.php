@@ -14,8 +14,8 @@ $sql = "INSERT INTO `inst_payment` (`payment_start_time`, `payment_end_time`, `p
 $rs = mysqli_query($conn, $sql);
 if ($done)
 {
-    header("Location: /success_feedback.html");
-    exit;
+    window.location.replace("http://www.w3schools.com");
+
 }
 
 ?>

@@ -87,7 +87,7 @@ ALTER TABLE `inst_instrument`
 -- Alter table `inst_instrument` every time a user is deleted or updated
 --
 ALTER TABLE `inst_instrument`
---  ADD CONSTRAINT `inst_color_fk` FOREIGN KEY (`color_id`) REFERENCES `inst_color` (`color_id`),
+  ADD CONSTRAINT `inst_color_fk` FOREIGN KEY (`color_id`) REFERENCES `inst_color` (`color_id`),
   ADD CONSTRAINT `inst_manuf_fk` FOREIGN KEY (`manuf_id`) REFERENCES `inst_manuf` (`manuf_id`);
 
 
