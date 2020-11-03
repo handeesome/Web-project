@@ -27,11 +27,11 @@ if (isset($_POST['button'])) {
     while($row = mysqli_fetch_array($result)){
         $location = $row['location_city'];
        $sql = "SELECT inst_no,color_id,year,manuf_id FROM inst_instrument WHERE inst_no IN(
-        SELECT inst_no FROM inst_rent WHERE rent_pickup_location = '$location');"; 
+        SELECT rent_inst_no FROM inst_rent WHERE rent_location_id In (SELECT location_id FROM inst_locations WHERE location_city = '$location'));";
     }
     
     $instno = mysqli_query($db, $sql);
-    echo "<form method='POST' action='result1.php'>";
+    echo "<form method='POST' action='search_result.php'>";
     echo "Showing Instruments that are rented in : ". $location;
     if (mysqli_num_rows($instno) == 0) {
         echo "No instruments in this location!";

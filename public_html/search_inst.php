@@ -26,7 +26,7 @@ if (isset($_POST['button'])) {
 
     $sql = "SELECT inst_no,color_id,year,manuf_id FROM inst_instrument WHERE manuf_id = $manuf;";
     $instno = mysqli_query($db, $sql);
-    echo "<form method='POST' action='result1.php'>";
+    echo "<form method='POST' action='search_result.php'>";
     if (mysqli_num_rows($instno) == 0) {
         echo "No results found!";
     }

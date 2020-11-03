@@ -28,7 +28,7 @@ if (isset($_POST['button'])) {
     $sql = "SELECT inst_no,color_id,year,manuf_id FROM inst_instrument WHERE inst_no IN(
         SELECT inst_no FROM inst_instrument_location WHERE location_zip = $zip);";
     $instno = mysqli_query($db, $sql);
-    echo "<form method='POST' action='result1.php'>";
+    echo "<form method='POST' action='search_result.php'>";
     echo "Showing Instruments that are located in ZIP CODE: ". $zip;
     if (mysqli_num_rows($instno) == 0) {
         echo "No instruments in this location!";
