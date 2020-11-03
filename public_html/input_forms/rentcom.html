@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rent Form</title>
+</head>
+
+<body>
+<fieldset>
+  <legend>Rental Form</legend>
+  <form name="frmrentcom" method="post" action="rentcom.php">
+    <p>
+      <label for="rentlocid">Input the rent location ID </label>
+      <input type="number" name="intrentlocid" id="intrentlocid">
+    </p>
+    <p>
+      <label for="rentstart">Rent start</label>
+      <input type="date" name="daterentstart" id="daterentstart">
+    </p>
+    <p>
+      <label for="rentend">Rent end</label>
+      <input type="date" name="daterentend" id="daterentend">
+    </p>
+    <p>
+      <label for="Instpick">What instrument do you want to rent</label>
+      <input type="number" name="intinstpick" id="intinstpick">
+    </p>
+    <p>
+      <label for="Userins">ENter your User ID</label>
+      <input type="number" name="intuserins" id="intuserins">
+    </p>
+    <p>
+      <label for="status">what is the rent status?</label>
+      <select type="text" name="txtstatus" id="txtstatus">
+        <option value = "Succesful">"Success"</option>
+        <option value = "Unsuccesful">"Unsuccesful"</option>
+        <option value = "Processing">"Processing"</option>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+    </p>
+  </form>
+</fieldset>
+</body>
+</html>

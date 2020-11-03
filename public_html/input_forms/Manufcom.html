@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Manufacturer Instrument Form</title>
+</head>
+
+<body>
+<fieldset>
+  <legend>Add an instrument and give manufacturer details</legend>
+  <form name="frmManufcom" method="post" action="Manufcom.php">
+    <p>
+      <label for="ManBrand">Input the Manufacturers Brand</label>
+      <input type="text" name="txtManBrand" id="txtManBrand">
+    </p>
+    <p>
+      <label for="ManModel">Input the Manufacturers Model for the Unit</label>
+      <input type="text" name="txtManModel" id="txtManModel">
+    </p>
+    <p>
+      <label for="SizeId">Input the Manufacturers Type for the Unit</label>
+      <input type="number" name="intSizeId" id="intSizeId">
+    </p>
+    <p>
+      <label for="ManRate">Rate on quality, this will impacty price!</label>
+      <select type="number" name="intManRate" id="intManRate">
+        <option value = "1">"1/4"</option>
+        <option value = "2">"2/4"</option>
+        <option value = "3">"3/4"</option>
+        <option value = "4">"4/4"</option>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+    </p>
+  </form>
+</fieldset>
+</body>
+</html>
