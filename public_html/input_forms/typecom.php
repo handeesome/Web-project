@@ -1,7 +1,7 @@
 <?php
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-include 'config.php';
+include '../config.php';
 
 // get the post records
 $txtType = $_POST['txtType'];

@@ -6,6 +6,6 @@ $dbname = "group23";
 
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$con = mysqli_connect($servername, $username, $password, $dbname);
 
 ?>
