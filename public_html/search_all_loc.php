@@ -31,7 +31,7 @@ if (isset($_POST['button'])) {
     echo "<form method='POST' action='search_result.php'>";
     echo "Showing Instruments that are located in ZIP CODE: ". $zip;
     if (mysqli_num_rows($instno) == 0) {
-        echo "No instruments in this location!";
+        echo "<br> No instruments in this location!";
     }
     while ($row = mysqli_fetch_array($instno)) {
         if ($row['color_id'] == 1) {

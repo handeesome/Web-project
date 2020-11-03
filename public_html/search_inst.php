@@ -28,7 +28,7 @@ if (isset($_POST['button'])) {
     $instno = mysqli_query($db, $sql);
     echo "<form method='POST' action='search_result.php'>";
     if (mysqli_num_rows($instno) == 0) {
-        echo "No results found!";
+        echo "<br> No results found!";
     }
     while ($row = mysqli_fetch_array($instno)) {
         if ($row['color_id'] == 1) {
