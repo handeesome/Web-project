@@ -7,7 +7,7 @@ if(isset($_SESSION['role']))
 {
     if($_SESSION['role'] != 'admin')
     {
-        header('Location: index_login.php');
+        header('Location: UserNoAccess.php');
     }
 }
 else

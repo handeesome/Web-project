@@ -10,14 +10,14 @@
 
 #banner {
     width: 100%;
-    margin: 0;
+    margin-top: -20;
     padding: 0;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,-0.01),#b37e13),url('img/background.png');
     background-size: cover;
     background-position: center;
 }
-    
+
 .banner-text {
     margin-left: 3%;
     margin-top: 0;
@@ -247,14 +247,21 @@ button {
 
 #footer {
     padding: 100px 0 20px;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 100px;
     background: #efefef;
-    position: relative;   
-    height: 80vhs;
+    position: absolute;   
+}
+
+.title-text h1 {
+    margin: 10px 0;
+    color: #b37e13;
 }
 
 .footer-row {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -263,7 +270,7 @@ button {
 .footer-left, .footer-right {
     flex-basis: 45%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin:0;
 }
 
 .footer-right {
@@ -273,10 +280,12 @@ button {
 
 .footer-row h1 {
     margin: 10px 0;
+    color: black;
 }
 
 .footer-row p {
-    line-height: 35px
+    line-height: 35px;
+    color: black;
 }
 
 .footer-left .fa, .footer-right .fa {
@@ -290,12 +299,10 @@ button {
     opacity: 0.2;
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 70%;
     transform: translate(-50%, -50%);
 }
-
 .imprint p {
-    text-align: center;
     font-size: 12px;
     margin-top: 20px;
 }

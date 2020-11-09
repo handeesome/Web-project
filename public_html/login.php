@@ -3,8 +3,7 @@
 session_start();
 require_once "config.php";
 
-$message= "";
-$role = "";
+
 if(isset($_POST["btnLogin"]))
 {
     $username = $_POST["Username"];
@@ -12,7 +11,7 @@ if(isset($_POST["btnLogin"]))
 
     $query = "SELECT * FROM inst_user WHERE user_name='$username' AND 
     user_password='$password'";
-    $result = mysqli_query($conn,$query);
+    $result = mysqli_query($con,$query);
 
     if(mysqli_num_rows($result)>0)
     {
@@ -21,20 +20,20 @@ if(isset($_POST["btnLogin"]))
             if($row["user_role"] == "admin")
             {
                 $_SESSION['AdminUser'] = $row["user_name"];
-                $_SESSION['role'] = $row["user_role"];
+                $_SESSION['role'] = "admin";
                 header('Location: Maintenance.php');
             }
             else
             {
-                $_SESSION['User'] = $row["Username"];
-                $_SESSION['role'] = $row["Role"];
+                $_SESSION['User'] = $row["user_name"];
+                $_SESSION['role'] = "user";
                 header('Location: search_inst.php');
             }
         }
 
     }
     else{
-        header('Location: login.php');
+        header('Location: index_login.php');
     }
 
 }

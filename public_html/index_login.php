@@ -21,7 +21,6 @@ include "login.php"
                 <input type="password" placeholder="Password" name="Password" value="">
             </div>
             <input class="btn" type="submit" name="btnLogin" value="Sign in">        
-        </div>
-        
+        </div> 
     </body>
 </html>

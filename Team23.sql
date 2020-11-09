@@ -8,7 +8,8 @@ CREATE TABLE `inst_user` (
   `user_password` varchar(250) NOT NULL,
   `user_email` varchar(200) NOT NULL,
   `user_phone` varchar(20) NOT NULL,
-  `user_DOB` DATE NOT NULL
+  `user_DOB` DATE NOT NULL,
+  `user_role` varchar(10)
 );
 
 --
