@@ -10,3 +10,8 @@ search_rent_loc.php
 And to this file for the result form:
 
 search_result.php
+
+For Assignment #8
+
+admin name: OT
+admin password: 12345678
