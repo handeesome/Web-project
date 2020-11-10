@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Payment Form</title>
+</head>
+
+<body>
+<fieldset>
+  <legend>Add an instrument and give manufacturer details</legend>
+  <form name="frmPaycom" method="post" action="paycom.php">
+    <p>
+      <label for="rentid">Input the rent ID </label>
+      <input type="number" name="intrentid" id="intrentid">
+    </p>
+    <p>
+      <label for="paystart">Payment start</label>
+      <input type="date" name="datepaystart" id="datepaystart">
+    </p>
+    <p>
+      <label for="payend">Payment end</label>
+      <input type="date" name="datepayend" id="datepayend">
+    </p>
+    <p>
+      <label for="price">Price Unit</label>
+      <input type="number" name="intprice" id="intprice">
+    </p>
+    <p>
+      <label for="Succ">Was the payment processed?</label>
+      <select type="text" name="txtSucc" id="txtSucc">
+        <option value = "Succesful">"Success"</option>
+        <option value = "Unsuccesful">"Unsuccesful"</option>
+    </p>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="Submit" id="Submit" value="Submit">
+    </p>
+  </form>
+</fieldset>
+</body>
+</html>
